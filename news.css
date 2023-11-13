@@ -1,0 +1,105 @@
+/* Resetting default styles and setting a background color for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #777157;
+}
+
+/* Styling for the nav bar */
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual list items in the nav bar */
+li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Styling for links in the nav bar */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styling for the hover effect on nav bar links */
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Styling for the active nav bar link */
+.active {
+    color: #393939;
+    text-decoration: underline;
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+/* Styling for the main content box */
+.box {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Read More button */
+.read-more-btn {
+    padding: 15px 30px;
+    background-color: #393939;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Contact button */
+.contact-btn {
+    background-color: #393939;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Background colour */
+#newsPage {
+    background-color: #777157;
+}
+
+/* Added styles for responsive layout */
+@media screen and (max-width: 768px) {
+    /* Adjusting the width of the product class for smaller screens */
+    .product {
+        width: calc(100% - 20px);
+    }
+}

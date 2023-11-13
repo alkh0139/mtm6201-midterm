@@ -1,0 +1,191 @@
+/* Resetting default styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header container */
+.header-container {
+    background-color: #777157;
+}
+
+/* Styling for the nav bar */
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual list items in the nav bar */
+li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Styling for links in the nav bar */
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styling for the hover effect on nav bar links */
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Styling for the active nav bar link */
+.active {
+    color: #393939;
+    text-decoration: underline;
+}
+
+/* Styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+/* Styling for the main content boxes */
+.box {
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0; /* Initial opacity for fade-in animation */
+    animation: fadeIn 1s ease-out forwards; /* Animation property for fade-in */
+}
+
+/* key frames for fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Specific styling for different boxes */
+#box1 {
+    background-color: #777157;
+}
+
+#box2 {
+    background-color: #ba8565;
+}
+
+#box3 {
+    background-color: #75523e;
+}
+
+#box4 {
+    background-color: #cfbeab;
+}
+
+/* Styling for the featured products section */
+.featured-products {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for individual product boxes */
+.product {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.products {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* Styling for product images */
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the product text overlay */
+.product-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for text within the product text overlay */
+.product-text p {
+    margin: 0;
+    color: white;
+}
+
+/* Read More button */
+.read-more-btn {
+    padding: 5px 10px;
+    background-color: #393939;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Added transition for scale-up animation */
+}
+
+/* Read More button on hover */
+.read-more-btn:hover {
+    transform: scale(1.1); /* Scale-up animation on hover */
+}
+
+/* Contact button */
+.contact-btn {
+    background-color: #393939;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Play button */
+.play-btn {
+    background: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* Added styles for responsive layout */
+@media screen and (max-width: 768px) {
+    /* Adjusting the width of the product class for smaller screens */
+    .product {
+        width: calc(100% - 20px);
+    }
+}
+
